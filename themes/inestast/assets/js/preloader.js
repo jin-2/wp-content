@@ -1,0 +1,1 @@
+(function(e){"use strict";e(document).ready(function(){if(e(window).width()>991){e("body").after('<div id="preloader"><div id="image-preloader"></div></div>')}});e(window).load(function(){if(e(window).width()>991){e("#preloader #image").fadeOut();e("#preloader").delay(350).fadeOut("slow")}})})(jQuery)

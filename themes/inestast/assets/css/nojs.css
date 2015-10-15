@@ -1,0 +1,20 @@
+#mobile-menu {
+	display: block;
+}
+
+.client-carousel {
+	display: block;
+}
+
+.client-carousel li {
+	float: left;
+	margin: 10px 5px;
+}
+
+.isotope-item {
+	opacity: 1;
+}
+
+.toggle-content {
+	display: block;
+}

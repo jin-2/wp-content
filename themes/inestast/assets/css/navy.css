@@ -1,0 +1,20 @@
+	/* ======== GENERAL COLORS IMPORTANT ======== */
+
+.general-color, #desktop-menu .active a, #desktop-menu li:hover a, .infobox-2 header div i, .social-1:hover, #portfolio-categories ul li a:hover, .readmore a:hover, .post header h1 a:hover, .post header h2 a:hover, .post header h3 a:hover, .post header h4 a:hover, .post header h5 a:hover, .post header h6 a:hover, .widget ul li a:hover, .post header p a:hover, #tags a:hover, #list-comments li a:hover, #post-nav a:hover, .media .rslides_nav:hover, #desktop-menu .sub-menu .current_menu_item a, .text-edit a, .comment-body a, .infobox-1 i, .number-container .number, #contact-info .row div:hover i, #portfolio-categories .current-cat a  {
+	color: #4A5B7D !important;
+}
+
+.general-bg, #submit-button-contact, #comment-form input[type="submit"]:hover, .text-edit thead, .comment-body thead {
+	background-color: #4A5B7D;
+}
+
+.general-border, .active-tab a, .text-edit blockquote, #contact-form input[type="text"]:focus, #contact-form textarea:focus, .style-input:focus, #portfolio-categories .current-cat a, #portfolio-categories .current-cat:hover a {
+	border-color: #4A5B7D !important;
+}
+
+	/* ======== / GENERAL COLORS IMPORTANT ======== */
+	
+.active-tab a {
+	border-left: 1px solid #eeeeee !important;
+	border-right: 1px solid #eeeeee !important;
+}

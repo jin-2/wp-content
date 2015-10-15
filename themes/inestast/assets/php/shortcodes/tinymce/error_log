@@ -1,0 +1,20 @@
+[19-Jan-2014 19:56:28] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 4
+[19-Jan-2014 19:59:05] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 4
+[19-Jan-2014 19:59:22] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 4
+[19-Jan-2014 19:59:45] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 4
+[19-Jan-2014 20:00:16] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 591
+[19-Jan-2014 20:01:00] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 5
+[19-Jan-2014 20:01:29] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 5
+[19-Jan-2014 20:02:09] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 5
+[19-Jan-2014 20:03:25] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 590
+[19-Jan-2014 20:08:29] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 590
+[19-Jan-2014 20:09:57] PHP Notice:  Undefined variable: animation in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/config.php on line 603
+[19-Jan-2014 20:09:57] PHP Warning:  Invalid argument supplied for foreach() in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 113
+[20-Jan-2014 22:04:29] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 49
+[20-Jan-2014 22:04:29] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 50
+[20-Jan-2014 22:04:29] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 51
+[20-Jan-2014 22:04:29] PHP Warning:  Invalid argument supplied for foreach() in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 64
+[20-Jan-2014 22:05:02] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 49
+[20-Jan-2014 22:05:02] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 50
+[20-Jan-2014 22:05:02] PHP Notice:  Undefined index:  testimonials in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 51
+[20-Jan-2014 22:05:02] PHP Warning:  Invalid argument supplied for foreach() in /home/ao196438/public_html/inesta-wp/wp1/wp-content/themes/inesta/assets/php/shortcodes/tinymce/shortcodes.class.php on line 64
