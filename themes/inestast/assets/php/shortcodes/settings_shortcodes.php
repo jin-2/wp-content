@@ -68,6 +68,93 @@ if (!function_exists('five_sixth')) {
 	add_shortcode('five_sixth', 'five_sixth');
 }
 
+
+/*-----------------------------------------------------------------------------------*/
+/*	Google Maps
+/*-----------------------------------------------------------------------------------*/
+
+if (!function_exists('map')) {
+    function map( $atts, $content = null ) {
+        extract(shortcode_atts(array(
+            'address'   => 'address'
+        ), $atts));
+
+        return $address.'
+            <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
+            <script>
+            jQuery(document).ready(function(){
+                google.maps.event.addDomListener(window, "load", initialize);
+                var geocoder;
+                var map;
+                var marker;
+                var marker_image = "'.get_template_directory_uri().'/assets/images/map-marker-100.png"; //마커 이미지 설정
+                function initialize(){
+                    if(jQuery("#map-canvas").length) {
+                        geocoder = new google.maps.Geocoder();
+                        var mapOptions = { //구글 맵 옵션 설정
+                            zoom : 16, //기본 확대율
+                            center : new google.maps.LatLng(40.8112834, -74.245077), // 지도 중앙 위치
+                            scrollwheel : false, //마우스 휠로 확대 축소 사용 여부
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+
+                        map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); //구글 맵을 사용할 타겟
+
+
+
+                        marker = new google.maps.Marker({ //마커 설정
+                            map : map,
+                            position : map.getCenter(), //마커 위치
+                            icon : marker_image //마커 이미지
+                        });
+                        google.maps.event.addDomListener(window, "resize", function() { //리사이즈에 따른 마커 위치
+                            var center = map.getCenter();
+                            google.maps.event.trigger(map, "resize");
+                            map.setCenter(center);
+                        });
+
+                    }//if-end
+                    codeAddress();
+                }//function-end
+
+                function codeAddress(){
+                    var address = "'.$address.'";
+
+                    geocoder.geocode({
+                        "address": address
+                    }, function(results, status){
+                        console.log(status);
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+                            addMark(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+                        }
+                    });
+                }
+
+                function addMark(lat, lng){
+                    if(typeof marker!="undefined"){
+                        marker.setMap(null);
+                    }
+
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(lat, lng),
+                        icon : marker_image //마커 이미지
+                    });
+                }
+
+            });
+
+            </script>
+
+            <div id="map-canvas" style="width: 100%; height: 400px"></div>
+
+';
+    }
+    add_shortcode('map', 'map');
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	Alerts
 /*-----------------------------------------------------------------------------------*/
