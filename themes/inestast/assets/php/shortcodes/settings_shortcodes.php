@@ -62,10 +62,21 @@ if (!function_exists('one_sixth')) {
 
 
 if (!function_exists('five_sixth')) {
-	function five_sixth( $atts, $content = null ) {
-	   return '<div class="col-sm-10 col-lg-10 column">' . do_shortcode($content) . '</div>';
-	}
-	add_shortcode('five_sixth', 'five_sixth');
+    function five_sixth( $atts, $content = null ) {
+        return '<div class="col-sm-10 col-lg-10 column">' . do_shortcode($content) . '</div>';
+    }
+    add_shortcode('five_sixth', 'five_sixth');
+}
+
+if (!function_exists('button')) {
+    function button( $atts, $content = null ) {
+        extract(shortcode_atts(array(
+            'style' => 'btn-default',
+            'href' => '#'
+        ), $atts));
+        return '<a class="'.$style.'" href="'.$href.'">' . do_shortcode($content) . ' <i class="fa fa-chevron-right"></i></a>';
+    }
+    add_shortcode('button', 'button');
 }
 
 
@@ -502,6 +513,7 @@ if (!function_exists('portfolio')) {
 	function portfolio( $atts, $content = null ) {
         extract(shortcode_atts(array(
             'only_featured'   => 'no',
+            'more_href' => get_home_url().'/portfolio'
         ), $atts));
 
         $portfolio_query = array(
@@ -584,6 +596,9 @@ if (!function_exists('portfolio')) {
 								</a>';
 			endwhile;
 		endif;
+        if($only_featured == "yes") echo '<div class="container">
+<div class="row"><a class="btn-default" href="'.$more_href.'">More portfolios <i class="fa fa-chevron-right"></i></a></div>
+</div>';
 		echo '</div>';
 	$tmp = ob_get_clean();
 	return $tmp;
