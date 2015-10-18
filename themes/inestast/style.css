@@ -2100,6 +2100,7 @@ address {
 
 #clients .btn-default,
 #news .btn-default,
-#counting .btn-default{
+#counting .btn-default,
+#portfolio .btn-default{
 	margin-top: 50px;
 }
