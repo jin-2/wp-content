@@ -597,10 +597,11 @@ if (!function_exists('portfolio')) {
 								</a>';
 			endwhile;
 		endif;
+
+		echo '</div>';
         if($only_featured == "yes") echo '<div class="container">
 <div class="row"><a class="btn-default" href="'.$more_href.'">More portfolios <i class="fa fa-chevron-right"></i></a></div>
 </div>';
-		echo '</div>';
 	$tmp = ob_get_clean();
 	return $tmp;
 	}
