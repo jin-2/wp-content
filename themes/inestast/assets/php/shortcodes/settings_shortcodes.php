@@ -470,7 +470,7 @@ if (!function_exists('team')) {
 
 if (!function_exists('clients')) {
 	function clients( $atts, $content = null ) {
-		ob_start();	
+		ob_start();
 			$the_query = new WP_Query( 'post_type=clients&posts_per_page=-1');
 		
 			echo '<ul class="client-carousel">';
@@ -500,10 +500,28 @@ if (!function_exists('clients')) {
 
 if (!function_exists('portfolio')) {
 	function portfolio( $atts, $content = null ) {
+        extract(shortcode_atts(array(
+            'only_featured'   => 'no',
+        ), $atts));
+
+        $portfolio_query = array(
+            'post_type' => 'portfolio',
+            'posts_per_page' => 50
+        );
+        if($only_featured == "yes") {
+            $portfolio_query['tax_query'] = array(
+                array(
+                    'taxonomy' => 'portfolio-category',
+                    'field'    => 'slug',
+                    'terms'    => 'featured',
+                )
+            );
+        }
 	ob_start();	
 		wp_reset_query();
 		global $smof_data;
-		$the_query_portfolio = new WP_Query( 'post_type=portfolio&posts_per_page=50');
+		$the_query_portfolio = new WP_Query( $portfolio_query );
+        if($only_featured == "no") :
 			echo '
 			
 			<div id="portfolio-categories">
@@ -532,7 +550,8 @@ if (!function_exists('portfolio')) {
 			';
 			
 			echo '<div id="works-list">';
-			if($the_query_portfolio->have_posts()) :
+        endif;
+        if($the_query_portfolio->have_posts()) :
 			while ($the_query_portfolio->have_posts() ) : $the_query_portfolio->the_post();
 			$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 			 
