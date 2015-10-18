@@ -566,7 +566,11 @@ if (!function_exists('portfolio')) {
         echo '<div id="works-list">';
         if($the_query_portfolio->have_posts()) :
 			while ($the_query_portfolio->have_posts() ) : $the_query_portfolio->the_post();
-			$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+			//$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+            $thumbnails = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'portfolio-image' );
+                $url = $thumbnails[0];
+                //printr($thumbnails,"thumbnails");
+
 			 
 			$term_list = wp_get_post_terms(get_the_ID(), 'portfolio-category', array("fields" => "slugs"));
 						echo '<a href="'.get_permalink().'" class="';
