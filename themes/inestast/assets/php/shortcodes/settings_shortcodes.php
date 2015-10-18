@@ -561,8 +561,9 @@ if (!function_exists('portfolio')) {
 			<div id="portfolio-item" class="section-main gap-bottom"></div>
 			';
 			
-			echo '<div id="works-list">';
+
         endif;
+        echo '<div id="works-list">';
         if($the_query_portfolio->have_posts()) :
 			while ($the_query_portfolio->have_posts() ) : $the_query_portfolio->the_post();
 			$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
