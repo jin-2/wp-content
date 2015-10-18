@@ -79,7 +79,7 @@ if (!function_exists('map')) {
             'address'   => 'address'
         ), $atts));
 
-        return $address.'
+        return '
             <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
             <script>
             jQuery(document).ready(function(){
