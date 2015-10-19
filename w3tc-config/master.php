@@ -86,7 +86,7 @@ return array(
 	'pgcache.enabled' => true,
 	'pgcache.comment_cookie_ttl' => 1800,
 	'pgcache.debug' => false,
-	'pgcache.engine' => 'file_generic',
+	'pgcache.engine' => 'file',
 	'pgcache.file.gc' => 3600,
 	'pgcache.file.nfs' => false,
 	'pgcache.file.locking' => false,
@@ -122,23 +122,26 @@ return array(
 		2 => 'wp-locations.php',
 	),
 	'pgcache.accept.qs' => array(
+		0 => '',
 	),
 	'pgcache.reject.front_page' => false,
 	'pgcache.reject.logged' => true,
 	'pgcache.reject.logged_roles' => false,
 	'pgcache.reject.roles' => array(
+		0 => '',
 	),
 	'pgcache.reject.uri' => array(
 		0 => 'wp-.*\\.php',
 		1 => 'index\\.php',
 	),
 	'pgcache.reject.ua' => array(
+		0 => '',
 	),
 	'pgcache.reject.cookie' => array(
 		0 => 'wptouch_switch_toggle',
 	),
 	'pgcache.reject.request_head' => false,
-	'pgcache.purge.front_page' => false,
+	'pgcache.purge.front_page' => true,
 	'pgcache.purge.home' => true,
 	'pgcache.purge.post' => true,
 	'pgcache.purge.comments' => false,
@@ -156,6 +159,7 @@ return array(
 	),
 	'pgcache.purge.postpages_limit' => 10,
 	'pgcache.purge.pages' => array(
+		0 => '',
 	),
 	'pgcache.purge.sitemap_regex' => '([a-z0-9_\\-]*?)sitemap([a-z0-9_\\-]*)?\\.xml',
 	'pgcache.prime.enabled' => false,
