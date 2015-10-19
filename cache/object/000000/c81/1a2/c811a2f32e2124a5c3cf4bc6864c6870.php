@@ -1,4 +1,4 @@
-­a#V<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:1765;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2013-12-09 17:07:35";s:13:"post_date_gmt";s:19:"2013-12-09 08:07:35";s:12:"post_content";s:1679:"[one_first] [slogan text_size="h1" text_color="default" animation=""] AIO PROMISESÂ [/slogan][/one_first]
+Ÿz$V<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:1765;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2013-12-09 17:07:35";s:13:"post_date_gmt";s:19:"2013-12-09 08:07:35";s:12:"post_content";s:1679:"[one_first] [slogan text_size="h1" text_color="default" animation=""] AIO PROMISESÂ [/slogan][/one_first]
 
 [one_first][slogan text_size="h5" text_color="default" animation=""]Via AIO, your expression is visualized. [/slogan][/one_first][divider]
 

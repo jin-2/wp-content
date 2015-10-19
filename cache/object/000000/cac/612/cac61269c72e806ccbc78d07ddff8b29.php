@@ -1,1 +1,1 @@
-¬b#V<?php exit; ?>a:1:{s:7:"content";a:2:{s:24:"widget_rev-slider-widget";b:1;s:10:"of_uploads";b:1;}}
+²$V<?php exit; ?>a:1:{s:7:"content";a:1:{s:10:"of_uploads";b:1;}}

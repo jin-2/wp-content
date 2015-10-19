@@ -1,4 +1,4 @@
-�a#V<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:2323;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2015-10-17 19:57:27";s:13:"post_date_gmt";s:19:"2015-10-17 10:57:27";s:12:"post_content";s:1309:"[one_first][slogan text_size="h2" text_color="default" animation=""] AIO NEWS [/slogan][/one_first][divider]
+�z$V<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:2323;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2015-10-17 19:57:27";s:13:"post_date_gmt";s:19:"2015-10-17 10:57:27";s:12:"post_content";s:1309:"[one_first][slogan text_size="h2" text_color="default" animation=""] AIO NEWS [/slogan][/one_first][divider]
 
 [one_third][content_box title="2016 부산국제모터쇼 총괄질행 수주" icon="" style="style2" text_color="default" animation=""] AIO가 8개사 경합 끝에 내년 부산국제모터쇼의 메인파트너사로 서정되었습니다. &lt;자동차의 바다 세계를 품다&gt;라는 주제로 내년 5월 30일부터 열... [/content_box][/one_third]
 
