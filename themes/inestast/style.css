@@ -1724,6 +1724,10 @@ address {
 	font-size: 60px;
 }
 
+.infobox-1.active h1, .infobox-1.active h2, .infobox-1.active h3, .infobox-1.active h4, .infobox-1.active h5, .infobox-1.active h6 {
+    color: #ed1b24;
+}
+
 .infobox-1 h1, .infobox-1 h2, .infobox-1 h3, .infobox-1 h4, .infobox-1 h5, .infobox-1 h6 {
 	margin: 20px 0;
 	font-weight: 300;
@@ -2074,6 +2078,14 @@ address {
 	font-weight: 300;
 }
 
+.slogan h1,
+.slogan h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ed1b24;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
 .white {
 	color:#ffffff !important;
 }
