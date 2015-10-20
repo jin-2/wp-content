@@ -1765,12 +1765,15 @@ address {
 }
 
 .team-member {
-	text-align: center;		margin-bottom: 20px;
+	text-align: center;		
+}
+.team-member + .team-member{
+	margin-bottom: 30px;
 }
 
 .photo-member {
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	display: inline-block;
 	text-align: center;
 }.photo-member img, .isotope-item img {	-o-transition: all 500ms;		-moz-transition: all 500ms;		-webkit-transition: all 500ms;		transition: all 500ms;	}.photo-member:hover img, .isotope-item:hover img {	-ms-transform:scale(1.5); /* IE 9 */	     -moz-transform:scale(1.5); /* Firefox */	    -webkit-transform:scale(1.5); /* Safari and Chrome */	    -o-transform:scale(1.5); /* Opera */		transform:scale(1.5); /* Opera */}
@@ -1787,13 +1790,13 @@ address {
 }
 
 .info-team {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 .info-team p {
 	font-size: 22px;
 	color: #3c3c3c !important;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	font-weight: 300;
 }
 
