@@ -1653,12 +1653,12 @@ address {
 
 #foot-page {
 	text-align: center;
-	padding: 60px 0;
+	padding: 0 0 30px;
 	z-index: 0;
 	bottom: 0;
 	width: 100%;
 	background-color: #202732;
-	height: 200px;
+	height: auto;
 }
 
 #foot-page .social-1 {
@@ -1666,7 +1666,8 @@ address {
 }
 
 #copyright {
-	margin-top: 25px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 	font-size: 13px;
 	color: #fff;
 	font-style: normal;
@@ -2092,9 +2093,9 @@ address {
 
 .slogan * { color: inherit !important; }
 
-/*
+/****************************************
  * Custom add style
- */
+ ****************************************/
 .btn-default{
 	box-sizing: border-box;
 	display: inline-block;
@@ -2118,4 +2119,23 @@ address {
 #counting .btn-default,
 #portfolio .btn-default{
 	margin-top: 50px;
+}
+
+/* footer - 회사소개서 다운로드 */
+#footer-download{
+	padding: 60px 0 0;
+	text-align: center;
+}
+#footer-download .btn-default{
+	width: 270px;
+	border-color: #fff;
+	vertical-align: middle;
+}
+#footer-download .btn-default i{
+	margin-right: 5px;
+}
+#footer-download .btn-default:hover,
+#footer-download .btn-default:focus{
+	background-color: #b8262d;
+	border-color: #b8262d;
 }
