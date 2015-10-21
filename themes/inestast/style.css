@@ -1235,7 +1235,7 @@ address {
 .contact-info-head {
 	font-size: 24px;
 	display: block !important;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 
 /* ======== / CONTACT ======== */
@@ -2138,4 +2138,40 @@ address {
 #footer-download .btn-default:focus{
 	background-color: #b8262d;
 	border-color: #b8262d;
+}
+
+/* contact info */
+#contact-info{
+	margin-top: -10px;
+}
+
+@media (max-width: 767px) {
+	#contact-info .col-sm-4{
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+	#contact-info .col-sm-4:first-child{
+		margin-top: 0;
+	}
+}
+
+/* section title space */
+#news .slogan h2,
+#contact .slogan h2,
+#team .slogan h2{
+	margin-bottom: 1em;
+}
+
+/* recruit */
+#recruit .column h5{
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+#recruit h6{
+	margin-bottom: 40px;
+}
+
+/*client*/
+#clients h6{
+	margin-bottom: 60px;
 }
