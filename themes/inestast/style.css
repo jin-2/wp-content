@@ -661,6 +661,10 @@ address {
 
 /* ======== MENUS PAGE ======== */
 
+#desktop-menu > li > a, #desktop-menu .current-menu-item > a {
+    font-weight: 600;
+}
+
 #nav-main {
 	width: 100%;
 	border-bottom: 2px solid #eeeeee;
@@ -1725,7 +1729,7 @@ address {
 	font-size: 60px;
 }
 
-.infobox-1.active h1, .infobox-1.active h2, .infobox-1.active h3, .infobox-1.active h4, .infobox-1.active h5, .infobox-1.active h6 {
+.infobox-1.active h 1, .infobox-1.active h2, .infobox-1.active h3, .infobox-1.active h4, .infobox-1.active h5, .infobox-1.active h6 {
     color: #ed1b24;
 }
 
