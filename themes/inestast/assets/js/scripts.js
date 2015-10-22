@@ -426,21 +426,22 @@ $('.number-container').appear(function() {
 	});
 
 	/* ======= Team member set id: 팝업에서 선택자로 사용하기 위해 ======= */
-	var $teamMember = $('#team'),
-		memberImg = $teamMember.find('.photo-member > img');
-	
-	$(memberImg).each(function(i, el){
-		var memberImgSrc, memberImgId;
+    var memberImg = $('.team-member > .photo-member > img');
+	if(memberImg.length>0){
+        $(memberImg).each(function(i, el){
+            var memberImgSrc, memberImgId;
 
-		// 팀원의 각 이미지의 이름을 가져온다.
-		memberImgSrc = $(el).attr('src').split('/').pop();
+            // 팀원의 각 이미지의 이름을 가져온다.
+            memberImgSrc = $(el).attr('src').split('/').pop();
 
-		// 이미지 이름에서 확장자를 분리한 이름만 가져온다.
-		memberImgId = memberImgSrc.split('.').shift();
+            // 이미지 이름에서 확장자를 분리한 이름만 가져온다.
+            memberImgId = memberImgSrc.split('.').shift();
 
-		// 각 이미지에 id로 이미지명 삽입.
-		$(el).attr('id', memberImgId);
-	});
+            // 각 이미지에 id로 이미지명 삽입.
+            $(el).attr('id', memberImgId);
+        });
+    }
+
 
 
 	
