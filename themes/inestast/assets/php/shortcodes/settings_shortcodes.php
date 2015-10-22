@@ -555,14 +555,16 @@ if (!function_exists('portfolio')) {
 					</div>
 				</div>
 			</div>
-			<div id="portfolio-loader">
-				<img src="'.get_template_directory_uri().'/assets/images/loader.gif" alt ="Loading" />
-			</div>
-			<div id="portfolio-item" class="section-main gap-bottom"></div>
 			';
 			
 
         endif;
+        echo '
+            <div id="portfolio-loader">
+				<img src="'.get_template_directory_uri().'/assets/images/loader.gif" alt ="Loading" />
+			</div>
+			<div id="portfolio-item" class="section-main gap-bottom"></div>
+        ';
         echo '<div id="works-list">';
         if($the_query_portfolio->have_posts()) :
 			while ($the_query_portfolio->have_posts() ) : $the_query_portfolio->the_post();
