@@ -513,7 +513,8 @@ if (!function_exists('portfolio')) {
 	function portfolio( $atts, $content = null ) {
         extract(shortcode_atts(array(
             'only_featured'   => 'no',
-            'more_href' => get_home_url().'/portfolio'
+            'more_href' => get_home_url().'/portfolio',
+            'is_show_all'=> 'yes'
         ), $atts));
 
         $portfolio_query = array(
@@ -539,9 +540,11 @@ if (!function_exists('portfolio')) {
 			<div id="portfolio-categories">
 				<div class="container">
 					<div class="row">
-						<ul>
-							<li class="current-cat"><a href="#" data-filter="*">'.$smof_data['shortcode_portfolio'].'</a>';
-							$terms = get_terms('portfolio-category','hide_empty=0');
+						<ul>';
+                            if($is_show_all == 'yes'){
+                                echo'<li class="current-cat"><a href="#" data-filter="*">'.$smof_data['shortcode_portfolio'].'</a>';
+                            }
+							$terms = get_terms('portfolio-category',array('hide_empty'=>'0', 'orderby'=>'name','order'=>'DESC','exclude'=>array(81)));
 							 $count = count($terms);
 							 if ( $count > 0 ){
 								
