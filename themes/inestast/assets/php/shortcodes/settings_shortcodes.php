@@ -357,6 +357,48 @@ if (!function_exists('content_box')) {
 /*-----------------------------------------------------------------------------------*/
 /* Number Details Shortcodes
 /*-----------------------------------------------------------------------------------*/
+if(!function_exists('newsroom')){
+    function newsroom( $atts, $content = null){
+        extract(shortcode_atts(array(
+            'column'   => 3,
+            'is_home' => "no"
+        ), $atts));
+        $result = '';
+        $column_lg = 12/(int)$column;
+        $column_lg = "col-lg-".$column_lg;
+        $query = array('post_type'=>'post','posts_per_page' => -1, 'orderby' => 'ID', 'order' => "DESC");
+        if($is_home == 'yes'){
+            $query['post__in'] = get_option( 'sticky_posts' );
+            $query['ignore_sticky_posts'] = 1;
+        }
+        $the_query = new WP_Query($query);
+        if($the_query->have_posts()) :
+            $result .= '<div class="news-room">';
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+                $result .= '<div class="col-sm-12 '.$column_lg.'">';
+                $result .= '<header><h4>'.get_the_title().'</h4></header>';
+                if(has_post_thumbnail()){
+                    $thumbnails = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'lead-image' );
+                    $url = $thumbnails[0];
+                    $content_summary = '<img src="'.$url.'" style="width:100%;" />';
+                }else{
+                    $content_summary = sub_string( strip_tags(get_the_content()), 0, 170 );
+                }
+
+                $result .= '<p>'.$content_summary.'</p>';
+                $result .= '</div>';
+            endwhile;
+            $result .= '</div>';
+        endif;
+        return $result;
+    }
+    add_shortcode('newsroom', 'newsroom');
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Number Details Shortcodes
+/*-----------------------------------------------------------------------------------*/
 
 
 if (!function_exists('number_details')) {
