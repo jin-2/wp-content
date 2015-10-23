@@ -1000,8 +1000,8 @@ address {
 }
 
 #portfolio-item {
-	background-color: #f1f1f1;
-	color: #8b8b8b;
+	background-color: #161A22;
+	color: #C1C1C1;
 	font-size: 13px;
 	line-height: 22px;
 	display: none;
@@ -1030,7 +1030,7 @@ address {
 }
 
 #portfolio-item .details li span {
-	color: #343434;
+	color: #fff;
 	font-weight: 600;
 }
 
