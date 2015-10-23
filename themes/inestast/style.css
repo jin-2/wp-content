@@ -2182,6 +2182,30 @@ address {
 	margin-bottom: 60px;
 }
 
+/*client popup*/
+#popmake-2511 .popmake-content{
+	padding: 10px;
+	background: #fff;
+}
+#popmake-2511 .popmake-content img{
+	margin: 2.5%;
+	width: 20%;
+}
+
+@media (max-width: 1000px) {
+		#popmake-2511 .popmake-content img{
+		margin: 2.5%;
+		width: 28%;
+	}
+}
+
+@media (max-width: 450px) {
+		#popmake-2511 .popmake-content img{
+		margin: 2.5%;
+		width: 45%;
+	}
+}
+
 /* 
 add: client-carousel control button style 
 
