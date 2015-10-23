@@ -296,7 +296,7 @@ $('.number-container').appear(function() {
 		/* ======= CLIENTS POPUP ======= */
 		// 순서중요: CLIENTS CAROUSEL 보다 먼저 실행되야 함.
 		// 이미지를 삽입 할 클라이언트 팝업 컨텐츠
-		var clientPopupContent = $('#popmake-2511 .popmake-content');
+		var clientPopupContent = $('#client_contents');
 
 		// 팝업 안에 클라이언트 이미지 복사
 		$('.client-carousel').find('img').clone().appendTo(clientPopupContent);
