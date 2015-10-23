@@ -1275,7 +1275,7 @@ address {
 }
 
 .post header {
-	margin: 30px 0 0;
+	/*margin: 30px 0 0;*/
 }
 
 .post header h1 a, .post header h2 a, .post header h3 a, .post header h4 a, .post header h5 a, .post header h6 a { 

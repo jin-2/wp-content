@@ -375,8 +375,8 @@ if(!function_exists('newsroom')){
         if($the_query->have_posts()) :
             $result .= '<div class="news-room">';
             while ( $the_query->have_posts() ) : $the_query->the_post();
-                $result .= '<div class="col-sm-12 '.$column_lg.'">';
-                $result .= '<header><h4>'.get_the_title().'</h4></header>';
+                $result .= '<div class="col-sm-12 '.$column_lg.' column">';
+                $result .= '<header><h4><a href="'.get_permalink().'">'.get_the_title().'</a></h4></header>';
                 if(has_post_thumbnail()){
                     $thumbnails = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'lead-image' );
                     $url = $thumbnails[0];
