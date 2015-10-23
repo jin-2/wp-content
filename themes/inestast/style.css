@@ -741,6 +741,7 @@ address {
 	display: block;
 	height: 70px;
 	line-height: 71px;
+	font-weight: 700;
 }
 
 #desktop-menu > li {
@@ -2090,6 +2091,7 @@ address {
     text-align: center;
     margin: auto;
     display: inline-block;
+    font-weight: 500;
 }
 .white {
 	color:#ffffff !important;
