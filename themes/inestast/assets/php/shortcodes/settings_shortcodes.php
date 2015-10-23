@@ -72,9 +72,10 @@ if (!function_exists('button')) {
     function button( $atts, $content = null ) {
         extract(shortcode_atts(array(
             'style' => 'btn-default',
-            'href' => '#'
+            'href' => '#',
+            'id' => ""
         ), $atts));
-        return '<a class="'.$style.'" href="'.$href.'">' . do_shortcode($content) . ' <i class="fa fa-chevron-right"></i></a>';
+        return '<a class="'.$style.'" href="'.$href.'" id="'.$id.'">' . do_shortcode($content) . ' <i class="fa fa-chevron-right"></i></a>';
     }
     add_shortcode('button', 'button');
 }
@@ -361,7 +362,8 @@ if(!function_exists('newsroom')){
     function newsroom( $atts, $content = null){
         extract(shortcode_atts(array(
             'column'   => 3,
-            'is_home' => "no"
+            'is_home' => "no",
+
         ), $atts));
         $result = '';
         $column_lg = 12/(int)$column;
