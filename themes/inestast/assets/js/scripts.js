@@ -34,7 +34,7 @@
 		
 
 /* ======== CLIENT CAROUSEL HIDDEN ======== */
-		$(".client-carousel").css("display","block");
+		//$(".client-carousel").css("display","block");
 		
 /* ======== STICKY MENU ======== */
 		$("#backtop").click(function() {
@@ -296,9 +296,10 @@ $('.number-container').appear(function() {
 /* ======= CLIENTS CAROUSEL ======= */		
 		$(".client-carousel").flexisel({
 			visibleItems: 5,
-			autoPlay: false,
+			autoPlay: true,
 			autoPlaySpeed: 2000,
 			pauseOnHover: false,
+			clone: true,
 			enableResponsiveBreakpoints: true,
 			responsiveBreakpoints: {
 				tablet: {
@@ -316,8 +317,6 @@ $('.number-container').appear(function() {
 				
 			}
 		});
-		
-
 		
 /* ======= MOBILE MENU ======= */	
 		var mobile_menu = $("#mobile-menu");
