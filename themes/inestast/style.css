@@ -968,12 +968,15 @@ address {
 /* ======== PORTFOLIO ======== */
 
 #portfolio-categories ul {
+	height: 38px;
 	text-align: center;
 	margin-bottom: 40px;
+	border-bottom: 1px solid #b8262d;
 }
 
 #portfolio-categories ul li {
 	display: inline-block;
+	vertical-align: top;
 }
 
 #portfolio-categories ul li a {
@@ -981,7 +984,7 @@ address {
 	height: 38px;
 	line-height: 34px;
 	padding: 0 20px;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 	font-size: 16px;
 	transition: none;
 	-moz-transition: none;
@@ -990,13 +993,45 @@ address {
 	font-style: normal;
 	color: inherit !important;
 	margin-left: -1px;
-	border: 1px solid #eee;
+	/*border: 1px solid #eee;*/
 }
 
-#portfolio-categories .current-cat a, #portfolio-categories .current-cat:hover a  {
+#portfolio-categories .current-cat a, 
+#portfolio-categories .current-cat:hover a  {
+	z-index: 10;
+	position: relative;
 	padding-left: 30px;
 	padding-right: 30px;
-	border-top: 3px solid #b8262d;
+	border: 1px solid #333;
+	border-bottom: 0;
+	border-top: 2px solid #b8262d;
+	background-color: #fff;
+	line-height: 32px;
+}
+
+@media (max-width: 1000px) {
+	#portfolio-categories .current-cat a, 
+	#portfolio-categories .current-cat:hover a{
+		border:0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#portfolio-categories ul {
+		height: auto;
+		border-bottom: 0;
+	}
+	#portfolio-categories ul li a{
+		padding: 0 0 0 10px;
+	}
+	
+	#portfolio-categories ul li a::before{
+		content: '/';
+		padding-right: 10px;
+	}
+	#portfolio-categories ul li:first-child a::before{
+		display: none;
+	}
 }
 
 #portfolio-item {
@@ -2183,24 +2218,24 @@ address {
 }
 
 /*client popup*/
-#popmake-2511 .popmake-content{
+#client_contents{
 	padding: 10px;
 	background: #fff;
 }
-#popmake-2511 .popmake-content img{
+#client_contents img{
 	margin: 2.5%;
 	width: 20%;
 }
 
 @media (max-width: 1000px) {
-		#popmake-2511 .popmake-content img{
+	#client_contents img{
 		margin: 2.5%;
 		width: 28%;
 	}
 }
 
 @media (max-width: 450px) {
-		#popmake-2511 .popmake-content img{
+	#client_contents img{
 		margin: 2.5%;
 		width: 45%;
 	}
