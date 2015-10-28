@@ -800,7 +800,7 @@ address {
 }
 
 #logo-container .img-responsive {
-	height: 70px !important
+	height: 60px !important
 }
 
 #logo-container h2 {
@@ -1014,7 +1014,7 @@ address {
 	#portfolio-categories .current-cat:hover a{
 		border:0;
 		padding-left: 10px;
-		padding-right: 10px;
+		padding-right: 0;
 	}
 
 	#portfolio-categories ul {
