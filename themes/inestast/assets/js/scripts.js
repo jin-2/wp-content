@@ -147,7 +147,7 @@ $('.number-container').appear(function() {
 /* ======= PORTFOLIO LOAD ======= */		
 		var toLoad;
 		$('#works-list a').click(function(){
-			$("html, body").scrollTo("#portfolio-categories", 1000, { offset: -height_menu } );
+			$("html, body").scrollTo("#key-references", 1000, { offset: -height_menu } );
 			toLoad = $(this).attr('href');　
 			$("#portfolio-loader").fadeIn(500);
 			$.ajax({
