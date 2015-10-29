@@ -365,33 +365,46 @@ if(!function_exists('newsroom')){
             'is_home' => "no",
 
         ), $atts));
+
+        ob_start();
+
         $result = '';
         $column_lg = 12/(int)$column;
         $column_lg = "col-lg-".$column_lg;
-        $query = array('post_type'=>'post','posts_per_page' => -1, 'orderby' => 'ID', 'order' => "DESC");
+        $paged = ( isset($_GET['paged']) ) ? $_GET['paged'] : 1;
+        $query = array('post_type'=>'post','posts_per_page' => 6, 'orderby' => 'ID', 'order' => "DESC", 'paged'=>$paged, 'ignore_sticky_posts'=> 0);
         if($is_home == 'yes'){
             $query['post__in'] = get_option( 'sticky_posts' );
             $query['ignore_sticky_posts'] = 1;
         }
+
         $the_query = new WP_Query($query);
         if($the_query->have_posts()) :
-            $result .= '<div class="news-room">';
+            echo '<div class="news-room">';
             while ( $the_query->have_posts() ) : $the_query->the_post();
-                $result .= '<div class="col-sm-12 '.$column_lg.' column">';
-                $result .= '<header><h4><a href="'.get_permalink().'">'.get_the_title().'</a></h4></header>';
+                echo '<div class="col-sm-12 '.$column_lg.' column">';
+                echo '<header><h4><a href="'.get_permalink().'">'.get_the_title().'</a></h4></header>';
                 if(has_post_thumbnail()){
                     $thumbnails = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'lead-image' );
                     $url = $thumbnails[0];
-                    $content_summary = '<img src="'.$url.'" style="width:100%;" />';
+                    $content_summary = '<a href="'.get_permalink().'"><img src="'.$url.'" style="width:100%;" /></a>';
                 }else{
-                    $content_summary = sub_string( strip_tags(get_the_content()), 0, 170 );
+                    $content_summary = sub_string( strip_tags(get_the_content()), 0, 170 ).' <a href="'.get_permalink().'">more</a>';
                 }
 
-                $result .= '<p>'.$content_summary.'</p>';
-                $result .= '</div>';
+                echo '<p>'.$content_summary.'</p>';
+                echo '</div>';
             endwhile;
-            $result .= '</div>';
+            echo '</div>';
         endif;
+        //printr($the_query);
+        if ($the_query->max_num_pages > 1):
+            echo '<div id="nav-below" class="navigation">';
+            if($paged > 1) echo '<div class="nav-previous"><a href="'.get_home_url().'/newsroom?paged='.($paged-1).'"><i class="fa fa-chevron-left"></i> PREV</a></div>';
+            echo '<div class="nav-next"><a href="'.get_home_url().'/newsroom?paged='.($paged+1).'">NEXT <i class="fa fa-chevron-right"></i></a></div>';
+            echo '</div>';
+        endif;
+        $result = ob_get_clean();
         return $result;
     }
     add_shortcode('newsroom', 'newsroom');
