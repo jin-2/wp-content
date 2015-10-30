@@ -371,8 +371,8 @@ if(!function_exists('newsroom')){
         $result = '';
         $column_lg = 12/(int)$column;
         $column_lg = "col-lg-".$column_lg;
-        $paged = ( isset($_GET['paged']) ) ? $_GET['paged'] : 1;
-        $query = array('post_type'=>'post','posts_per_page' => 6, 'orderby' => 'ID', 'order' => "DESC", 'paged'=>$paged, 'ignore_sticky_posts'=> 0);
+        $now = ( isset($_REQUEST['now']) ) ? $_REQUEST['now'] : 1;
+        $query = array('post_type'=>'post','posts_per_page' => 6, 'orderby' => 'ID', 'order' => "DESC", 'paged'=>$now, 'ignore_sticky_posts'=> 0);
         if($is_home == 'yes'){
             $query['post__in'] = get_option( 'sticky_posts' );
             $query['ignore_sticky_posts'] = 1;
@@ -400,8 +400,8 @@ if(!function_exists('newsroom')){
         //printr($the_query);
         if ($the_query->max_num_pages > 1):
             echo '<div id="nav-below" class="navigation">';
-            if($paged > 1) echo '<div class="nav-previous"><a href="'.get_home_url().'/newsroom?paged='.($paged-1).'"><i class="fa fa-chevron-left"></i> PREV</a></div>';
-            echo '<div class="nav-next"><a href="'.get_home_url().'/newsroom?paged='.($paged+1).'">NEXT <i class="fa fa-chevron-right"></i></a></div>';
+            if($now > 1) echo '<div class="nav-previous"><a href="'.get_home_url().'/newsroom?now='.($now-1).'"><i class="fa fa-chevron-left"></i> PREV</a></div>';
+            if($the_query->max_num_pages > $now) echo '<div class="nav-next"><a href="'.get_home_url().'/newsroom?now='.($now+1).'">NEXT <i class="fa fa-chevron-right"></i></a></div>';
             echo '</div>';
         endif;
         $result = ob_get_clean();

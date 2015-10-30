@@ -105,11 +105,11 @@ global $ef1_google_fonts;
 $of_options = array();
 
 //General Options
-$of_options[] = array( 	"name" 		=> "General Options",
+$of_options[] = array( 	"name" 		=> __("General Options"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "General Options",
+$of_options[] = array( 	"name" 		=> __("General Options"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >General Options</h3>",
@@ -117,45 +117,45 @@ $of_options[] = array( 	"name" 		=> "General Options",
 						"type" 		=> "info"
 				);
 				
-$of_options[] = array( 	"name" 		=> "General Color",
-						"desc" 		=> "Pick a general color for the theme.",
+$of_options[] = array( 	"name" 		=> __("General Color"),
+						"desc" 		=> __("Pick a general color for the theme."),
 						"id" 		=> "general_color",
 						"std" 		=> "",
 						"type" 		=> "color"
 				);
-$of_options[] = array( 	"name" 		=> "Contact Email",
-						"desc" 		=> "Contact Email - use shortcode contact form ",
+$of_options[] = array( 	"name" 		=> __("Contact Email"),
+						"desc" 		=> __("Contact Email - use shortcode contact form "),
 						"id" 		=> "contact_email_shortcode",
 						"std" 		=> "Your Email",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Enable Sticky Menu",
+$of_options[] = array( 	"name" 		=> __("Enable Sticky Menu"),
 						"desc" 		=> "",
 						"id" 		=> "enable_sticky_menu",
 						"std" 		=> 1,
 						"type" 		=> "switch"
 				);   
-$of_options[] = array( 	"name" 		=> "Meta Description",
+$of_options[] = array( 	"name" 		=>__( "Meta Description"),
 						"desc" 		=> "",
 						"id" 		=> "meta_description",
 						"std" 		=> "Default Text",
 						"type" 		=> "textarea"
 				);	
 				
-$of_options[] = array( 	"name" 		=> "Meta Keywords",
+$of_options[] = array( 	"name" 		=> __("Meta Keywords"),
 						"desc" 		=> "",
 						"id" 		=> "meta_keywords",
 						"std" 		=> "Default Text",
 						"type" 		=> "textarea"
 				);	
-$of_options[] = array( 	"name" 		=> "Enable Preloader",
+$of_options[] = array( 	"name" 		=> __("Enable Preloader"),
 						"desc" 		=> "",
 						"id" 		=> "enable_preloader",
 						"std" 		=> 0,
 						"type" 		=> "switch"
 				);  
-$of_options[] = array( 	"name" 		=> "Custom Favicon",
-						"desc" 		=> "It's image represent your website favicon (16x16px)",
+$of_options[] = array( 	"name" 		=> __("Custom Favicon"),
+						"desc" 		=> __("It's image represent your website favicon (16x16px)"),
 						"id" 		=> "favicon",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
 						"std" 		=> "",
@@ -163,32 +163,32 @@ $of_options[] = array( 	"name" 		=> "Custom Favicon",
 						"type" 		=> "media"
 				);		
 
-$of_options[] = array( 	"name" 		=> "Enable BackTop",
+$of_options[] = array( 	"name" 		=> __("Enable BackTop"),
 						"desc" 		=> "",
 						"id" 		=> "enable_backtop",
 						"std" 		=> 1,
 						"type" 		=> "switch"
 				); 
-$of_options[] = array( 	"name" 		=> "Tracking Code",
-						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will by added into the head template",
+$of_options[] = array( 	"name" 		=> __("Tracking Code"),
+						"desc" 		=> __("Paste your Google Analytics (or other) tracking code here. This will by added into the head template"),
 						"id" 		=> "tracking_code",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);		
 // Home Section Start
-$of_options[] = array( 	"name" 		=> "Home Section",
+$of_options[] = array( 	"name" 		=> __("Home Section"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "Home Section",
+$of_options[] = array( 	"name" 		=> __("Home Section"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
-						"std" 		=> "<h3 class='h3_options' >Home Section</h3>",
+						"std" 		=> "<h3 class='h3_options' >".__("Home Section")."</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
 				
-$of_options[] = array( 	"name" 		=> "Type Home Section",
+$of_options[] = array( 	"name" 		=> __("Type Home Section"),
 						"desc" 		=> "",
 						"id" 		=> "type_home_section",
 						"std" 		=> 'none',
@@ -201,7 +201,7 @@ $of_options[] = array( 	"name" 		=> "Type Home Section",
 						'layerslider' => 'Layer Slider'
 						)
 				);	
-$of_options[] = array( 	"name" 		=> "Background Images",
+$of_options[] = array( 	"name" 		=> __("Background Images"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Background Images</h3>",
@@ -209,41 +209,40 @@ $of_options[] = array( 	"name" 		=> "Background Images",
 						"type" 		=> "info"
 				);		
 				
-$of_options[] = array( 	"name" 		=> "Slider Options",
-						"desc" 		=> "Unlimited slider with drag and drop sortings.",
+$of_options[] = array( 	"name" 		=> __("Slider Options"),
+						"desc" 		=> __("Unlimited slider with drag and drop sortings."),
 						"id" 		=> "ef1_slider",
 						"std" 		=> "",
 						"type" 		=> "slider"
 				);
-$of_options[] = array( 	"name" 		=> "Background Video",
+$of_options[] = array( 	"name" 		=> __("Background Video"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Background Video</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);		
-$of_options[] = array( 	"name" 		=> "Background Video type webm",
+$of_options[] = array( 	"name" 		=> __("Background Video type webm"),
 						"desc" 		=> "",
 						"id" 		=> "background_video_type_webm",
 						"std" 		=> "",
 						"type" 		=> "upload"
 				);		
-$of_options[] = array( 	"name" 		=> "Background Video type mp4
-",
+$of_options[] = array( 	"name" 		=> __("Background Video type mp4"),
 						"desc" 		=> "",
 						"id" 		=> "background_video_type_mp4",
 						"std" 		=> "",
 						"type" 		=> "upload"
 				);	
-$of_options[] = array( 	"name" 		=> "Video and Image Text",
+$of_options[] = array( 	"name" 		=> __("Video and Image Text"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Video and Image Text</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
-$of_options[] = array( 	"name" 		=> "Title",
-						"desc" 		=> "Title Carousel",
+$of_options[] = array( 	"name" 		=> __("Title"),
+						"desc" 		=> __("Title Carousel"),
 						"id" 		=> "title_home",
 						"std" 		=> "
 <li>
@@ -254,45 +253,45 @@ $of_options[] = array( 	"name" 		=> "Title",
 </li> ",
 						"type" 		=> "textarea"
 				);		
-$of_options[] = array( 	"name" 		=> "Subtitle",
+$of_options[] = array( 	"name" 		=> __("Subtitle"),
 						"desc" 		=> "",
 						"id" 		=> "subtitle_home",
 						"std" 		=> "RESPONSIVE ONE PAGE PORTFOLIO TEMPLATE",
 						"type" 		=> "text"
 				);					
-$of_options[] = array( 	"name" 		=> "Revolution Slider",
+$of_options[] = array( 	"name" 		=> __("Revolution Slider"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Revolution Slider</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);		
-$of_options[] = array( 	"name" 		=> "Revolution Slider",
-						"desc" 		=> "Slider Alias",
+$of_options[] = array( 	"name" 		=> __("Revolution Slider"),
+						"desc" 		=> __("Slider Alias"),
 						"id" 		=> "revolution_slider",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Layer Slider",
+$of_options[] = array( 	"name" 		=> __("Layer Slider"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Layer Slider</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);		
-$of_options[] = array( 	"name" 		=> "Layer Slider",
-						"desc" 		=> "Slider Alias",
+$of_options[] = array( 	"name" 		=> __("Layer Slider"),
+						"desc" 		=> __("Slider Alias"),
 						"id" 		=> "layer_slider",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
 // Blog Section Start
-$of_options[] = array( 	"name" 		=> "Blog",
+$of_options[] = array( 	"name" 		=> __("Blog"),
 						"type" 		=> "heading"
 				);			
 $url =  ADMIN_DIR . 'assets/images/';
-$of_options[] = array( 	"name" 		=> "Default Layout",
-						"desc" 		=> "Select main content and sidebar alignment.",
+$of_options[] = array( 	"name" 		=> __("Default Layout"),
+						"desc" 		=> __("Select main content and sidebar alignment."),
 						"id" 		=> "default_layout",
 						"std" 		=> "2c-r-fixed",
 						"type" 		=> "images",
@@ -301,7 +300,7 @@ $of_options[] = array( 	"name" 		=> "Default Layout",
 							'2c-l-fixed' 	=> $url . '2cl.png',
 						)
 				);
-$of_options[] = array( 	"name" 		=> "Pagination Type",
+$of_options[] = array( 	"name" 		=> __("Pagination Type"),
 						"desc" 		=> "",
 						"id" 		=> "pagination_type",
 						"std" 		=> 'n_p',
@@ -311,36 +310,36 @@ $of_options[] = array( 	"name" 		=> "Pagination Type",
 						'n_p' => 'Next & Previous'
 						)
 				);	
-$of_options[] = array( 	"name" 		=> "Enable Author Info",
+$of_options[] = array( 	"name" 		=> __("Enable Author Info"),
 						"desc" 		=> "",
 						"id" 		=> "enable_author_info",
 						"std" 		=> 1,
 						"type" 		=> "switch"
 				); 
-$of_options[] = array( 	"name" 		=> "Enable Create Data",
+$of_options[] = array( 	"name" 		=> __("Enable Create Data"),
 						"desc" 		=> "",
 						"id" 		=> "enable_create_data",
 						"std" 		=> 1,
 						"type" 		=> "switch"
 				); 
-$of_options[] = array( 	"name" 		=> "Enable Comments Info",
+$of_options[] = array( 	"name" 		=> __("Enable Comments Info"),
 						"desc" 		=> "",
 						"id" 		=> "enable_comments_info",
 						"std" 		=> 1,
 						"type" 		=> "switch"
 				); 
-$of_options[] = array( 	"name" 		=> "Typography",
+$of_options[] = array( 	"name" 		=> __("Typography"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "General Fonts",
+$of_options[] = array( 	"name" 		=> __("General Fonts"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >General Fonts</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
-$of_options[] = array( 	"name" 		=> "Body Text Font",
+$of_options[] = array( 	"name" 		=> __("Body Text Font"),
 						"desc" 		=> "",
 						"id" 		=> "body_text_font",
 						"std" 		=> array(
@@ -351,14 +350,14 @@ $of_options[] = array( 	"name" 		=> "Body Text Font",
 										),
 						"type" 		=> "typography"
 				);  
-$of_options[] = array( 	"name" 		=> "Navigation",
+$of_options[] = array( 	"name" 		=> __("Navigation"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Navigation</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
-$of_options[] = array( 	"name" 		=> "Navigation Typography",
+$of_options[] = array( 	"name" 		=> __("Navigation Typography"),
 						"desc" 		=> "",
 						"id" 		=> "navigation_typography",
 						"std" 		=> array(
@@ -369,7 +368,7 @@ $of_options[] = array( 	"name" 		=> "Navigation Typography",
 										),
 						"type" 		=> "typography"
 				);  
-$of_options[] = array( 	"name" 		=> "Navigation Typography Hover",
+$of_options[] = array( 	"name" 		=> __("Navigation Typography Hover"),
 						"desc" 		=> "",
 						"id" 		=> "navigation_typography_hover",
 						"std" 		=> array(
@@ -380,7 +379,7 @@ $of_options[] = array( 	"name" 		=> "Navigation Typography Hover",
 										),
 						"type" 		=> "typography"
 				); 
-$of_options[] = array( 	"name" 		=> "Navigation Typography Submenu ",
+$of_options[] = array( 	"name" 		=> __("Navigation Typography Submenu "),
 						"desc" 		=> "",
 						"id" 		=> "navigation_typography_submenu",
 						"std" 		=> array(
@@ -391,7 +390,7 @@ $of_options[] = array( 	"name" 		=> "Navigation Typography Submenu ",
 										),
 						"type" 		=> "typography"
 				); 
-$of_options[] = array( 	"name" 		=> "Navigation Typography Submenu Hover",
+$of_options[] = array( 	"name" 		=> __("Navigation Typography Submenu Hover"),
 						"desc" 		=> "",
 						"id" 		=> "navigation_typography_submenu_hover",
 						"std" 		=> array(
@@ -402,26 +401,26 @@ $of_options[] = array( 	"name" 		=> "Navigation Typography Submenu Hover",
 										),
 						"type" 		=> "typography"
 				); 				
-$of_options[] = array( 	"name" 		=> "Submenu Color",
+$of_options[] = array( 	"name" 		=> __("Submenu Color"),
 						"desc" 		=> "",
 						"id" 		=> "submenu_color",  
 						"std" 		=> "#222",
 						"type" 		=> "color"
 				);	
-$of_options[] = array( 	"name" 		=> "Submenu Hover Color",
+$of_options[] = array( 	"name" 		=> __("Submenu Hover Color"),
 						"desc" 		=> "",
 						"id" 		=> "submenu_hover_color",  
 						"std" 		=> "#2ac4ea",
 						"type" 		=> "color"
 				);	
-$of_options[] = array( 	"name" 		=> "Footer",
+$of_options[] = array( 	"name" 		=> __("Footer"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Footer</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);				
-$of_options[] = array( 	"name" 		=> "Copyright Text Typography",
+$of_options[] = array( 	"name" 		=> __("Copyright Text Typography"),
 						"desc" 		=> "",
 						"id" 		=> "copyright_text__typography",
 						"std" 		=> array(
@@ -432,15 +431,15 @@ $of_options[] = array( 	"name" 		=> "Copyright Text Typography",
 										),
 						"type" 		=> "typography"
 				); 
-$of_options[] = array( 	"name" 		=> "Headlines",
+$of_options[] = array( 	"name" 		=> __("Headlines"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Headlines</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
-$of_options[] = array( 	"name" 		=> "Heading Font Family",
-						"desc" 		=> "Some description. Note that this is a custom text added added from options file.",
+$of_options[] = array( 	"name" 		=> __("Heading Font Family"),
+						"desc" 		=> __("Some description. Note that this is a custom text added added from options file."),
 						"id" 		=> "g_select",
 						"std" 		=> "Open Sans",
 						"type" 		=> "select_google_font",
@@ -450,135 +449,135 @@ $of_options[] = array( 	"name" 		=> "Heading Font Family",
 						),
 						"options" 	=> $ef1_google_fonts
 				);
-$of_options[] = array( 	"name" 		=> "H1 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H1 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h1_font",
 						"std" 		=> array('size' => '40px','color' => '#343434'),
 						"type" 		=> "typography"
 				);
-$of_options[] = array( 	"name" 		=> "H2 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H2 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h2_font",
 						"std" 		=> array('size' => '34px','color' => '#343434'),
 						"type" 		=> "typography"
 				);
-$of_options[] = array( 	"name" 		=> "H3 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H3 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h3_font",
 						"std" 		=> array('size' => '30px','color' => '#343434'),
 						"type" 		=> "typography"
 				);
-$of_options[] = array( 	"name" 		=> "H4 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H4 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h4_font",
 						"std" 		=> array('size' => '24px','color' => '#343434'),
 						"type" 		=> "typography"
 				);
-$of_options[] = array( 	"name" 		=> "H5 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H5 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h5_font",
 						"std" 		=> array('size' => '20px','color' => '#343434'),
 						"type" 		=> "typography"
 				);
-$of_options[] = array( 	"name" 		=> "H6 - Font Properties",
+$of_options[] = array( 	"name" 		=> __("H6 - Font Properties"),
 						"desc" 		=> "",
 						"id" 		=> "h6_font",
 						"std" 		=> array('size' => '15px','color' => '#343434'),
 						"type" 		=> "typography"
 				);	
-$of_options[] = array( 	"name" 		=> "Translate",
+$of_options[] = array( 	"name" 		=> __("Translate"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "404 Page",
+$of_options[] = array( 	"name" 		=> __("404 Page"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >404 Page</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
-$of_options[] = array( 	"name" 		=> "404 Title Text",
+$of_options[] = array( 	"name" 		=> __("404 Title Text"),
 						"desc" 		=> "",
 						"id" 		=> "404_title_text",
 						"std" 		=> "ooops... error 404",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "404 Text",
+$of_options[] = array( 	"name" 		=> __("404 Text"),
 						"desc" 		=> "",
 						"id" 		=> "404_text",
 						"std" 		=> "We`re sorry, but the page you are looking for doesn`t exist.",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "404 Link",
+$of_options[] = array( 	"name" 		=> __("404 Link"),
 						"desc" 		=> "",
 						"id" 		=> "404_link",
 						"std" 		=> "Go to homepage",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Shortcodes",
+$of_options[] = array( 	"name" 		=> __("Shortcodes"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Shortcodes</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);		
-$of_options[] = array( 	"name" 		=> "Shortcode Portfolio",
+$of_options[] = array( 	"name" 		=> __("Shortcode Portfolio"),
 						"desc" 		=> "",
 						"id" 		=> "shortcode_portfolio",
 						"std" 		=> "All",
 						"type" 		=> "text"
 				);
-$of_options[] = array( 	"name" 		=> "Contact Message",
+$of_options[] = array( 	"name" 		=> __("Contact Message"),
 						"desc" 		=> "",
 						"id" 		=> "contact_message",
 						"std" 		=> "Your message...",
 						"type" 		=> "text"
 				);
-$of_options[] = array( 	"name" 		=> "Contact Name",
+$of_options[] = array( 	"name" 		=> __("Contact Name"),
 						"desc" 		=> "",
 						"id" 		=> "contact_name",
 						"std" 		=> "Your name (required)",
 						"type" 		=> "text"
 				);
-$of_options[] = array( 	"name" 		=> "Contact Email",
+$of_options[] = array( 	"name" 		=> __("Contact Email"),
 						"desc" 		=> "",
 						"id" 		=> "contact_email",
 						"std" 		=> "Your email (required)",
 						"type" 		=> "text"
 				);
-$of_options[] = array( 	"name" 		=> "Contact Website",
+$of_options[] = array( 	"name" 		=> __("Contact Website"),
 						"desc" 		=> "",
 						"id" 		=> "contact_website",
 						"std" 		=> "Your website",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Contact Website",
+$of_options[] = array( 	"name" 		=> __("Contact Website"),
 						"desc" 		=> "",
 						"id" 		=> "contact_website",
 						"std" 		=> "Your website",
 						"type" 		=> "text"
 				);					
-$of_options[] = array( 	"name" 		=> "Custom CSS",
+$of_options[] = array( 	"name" 		=> __("Custom CSS"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "Custom CSS",
+$of_options[] = array( 	"name" 		=> __("Custom CSS"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Custom CSS</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);	
-$of_options[] = array( 	"name" 		=> "Custom CSS",
+$of_options[] = array( 	"name" 		=> __("Custom CSS"),
 						"desc" 		=> "",
 						"id" 		=> "custom_css",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);	
-$of_options[] = array( 	"name" 		=> "Footer and Header",
+$of_options[] = array( 	"name" 		=> __("Footer and Header"),
 						"type" 		=> "heading"
 				);
-$of_options[] = array( 	"name" 		=> "Header",
+$of_options[] = array( 	"name" 		=> __("Header"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Header</h3>",
@@ -586,135 +585,135 @@ $of_options[] = array( 	"name" 		=> "Header",
 						"type" 		=> "info"
 				);
 
-$of_options[] = array( 	"name" 		=> "Logo Image",
+$of_options[] = array( 	"name" 		=> __("Logo Image"),
 						"desc" 		=> "",
 						"id" 		=> "logo_image",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
 						"std" 		=> "",
 						"type" 		=> "upload"
 				);	
-$of_options[] = array( 	"name" 		=> "Retina 2x Logo Image",
+$of_options[] = array( 	"name" 		=> __("Retina 2x Logo Image"),
 						"desc" 		=> "",
 						"id" 		=> "retina_image",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
 						"std" 		=> "",
 						"type" 		=> "upload"
 				);	
-$of_options[] = array( 	"name" 		=> "Header Menu Color",
+$of_options[] = array( 	"name" 		=> __("Header Menu Color"),
 						"desc" 		=> "",
 						"id" 		=> "header_color",  
 						"std" 		=> "#fff",
 						"type" 		=> "color"
 				);					
-$of_options[] = array( 	"name" 		=> "Footer Text",
+$of_options[] = array( 	"name" 		=> __("Footer Text"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Footer</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
-$of_options[] = array( 	"name" 		=> "Copyright Text",
+$of_options[] = array( 	"name" 		=> __("Copyright Text"),
 						"desc" 		=> "",
 						"id" 		=> "copyright_text",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Footer Color",
+$of_options[] = array( 	"name" 		=> __("Footer Color"),
 						"desc" 		=> "",
 						"id" 		=> "footer_color",  
 						"std" 		=> "#202732",
 						"type" 		=> "color"
 				);	
-$of_options[] = array( 	"name" 		=> "Footer Social Icon",
+$of_options[] = array( 	"name" 		=> __("Footer Social Icon"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Footer Social Icon</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
-$of_options[] = array( 	"name" 		=> "Facebook URL",
+$of_options[] = array( 	"name" 		=> __("Facebook URL"),
 						"desc" 		=> "If it is empty, icon was disabled.",
 						"id" 		=> "facebookurl",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Twitter URL",
+$of_options[] = array( 	"name" 		=> __("Twitter URL"),
 						"desc" 		=> "If it is empty, icon was disabled.",
 						"id" 		=> "twitterurl",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Dribbble URL",
+$of_options[] = array( 	"name" 		=> __("Dribbble URL"),
 						"desc" 		=> "If it is empty, icon was disabled.",
 						"id" 		=> "dribbleurl",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "LinkedIn URL",
+$of_options[] = array( 	"name" 		=> __("LinkedIn URL"),
 						"desc" 		=> "If it is empty, icon was disabled.",
 						"id" 		=> "linkedinurl",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Google Plus URL",
+$of_options[] = array( 	"name" 		=> __("Google Plus URL"),
 						"desc" 		=> "If it is empty, icon was disabled.",
 						"id" 		=> "googleurl",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Twitter API",
+$of_options[] = array( 	"name" 		=> __("Twitter API"),
 						"type" 		=> "heading"
 				);
 
-$of_options[] = array( 	"name" 		=> "Twitter API",
+$of_options[] = array( 	"name" 		=> __("Twitter API"),
 						"desc" 		=> "",
 						"id" 		=> "general_info",
 						"std" 		=> "<h3 class='h3_options' >Twitter API</h3>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
-$of_options[] = array( 	"name" 		=> "Consumer key",
+$of_options[] = array( 	"name" 		=> __("Consumer key"),
 						"desc" 		=> "",
 						"id" 		=> "consumer_key",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);					$of_options[] = array( 	"name" 		=> "Username",						"desc" 		=> "",						"id" 		=> "username",						"std" 		=> "",						"type" 		=> "text"				);	
-$of_options[] = array( 	"name" 		=> "Consumer secret",
+$of_options[] = array( 	"name" 		=> __("Consumer secret"),
 						"desc" 		=> "",
 						"id" 		=> "consumer_secret",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Access token",
+$of_options[] = array( 	"name" 		=> __("Access token"),
 						"desc" 		=> "",
 						"id" 		=> "access_token",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);	
-$of_options[] = array( 	"name" 		=> "Access token secret",
+$of_options[] = array( 	"name" 		=> __("Access token secret"),
 						"desc" 		=> "",
 						"id" 		=> "access_token_secret",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);					
 // Backup Options
-$of_options[] = array( 	"name" 		=> "Backup Options",
+$of_options[] = array( 	"name" 		=> __("Backup Options"),
 						"type" 		=> "heading",
 						"icon"		=> ADMIN_IMAGES . "icon-slider.png"
 				);
 				
-$of_options[] = array( 	"name" 		=> "Backup and Restore Options",
+$of_options[] = array( 	"name" 		=> __("Backup and Restore Options"),
 						"id" 		=> "of_backup",
 						"std" 		=> "",
 						"type" 		=> "backup",
-						"desc" 		=> 'You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back.',
+						"desc" 		=> __('You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back.'),
 				);
 				
-$of_options[] = array( 	"name" 		=> "Transfer Theme Options Data",
+$of_options[] = array( 	"name" 		=> __("Transfer Theme Options Data"),
 						"id" 		=> "of_transfer",
 						"std" 		=> "",
 						"type" 		=> "transfer",
-						"desc" 		=> 'You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Options".',
+						"desc" 		=> __('You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Options".'),
 				);
 				
 	}//End function: of_options()
