@@ -15,7 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-body{font-family: 'Noto Sans KR';}
+body{font-family: 'Noto Sans KR'!important;}
 
 /* ======== RESET ======== */
 
@@ -2266,3 +2266,25 @@ add: client-carousel control button style
     right: 0;
 }
 */
+
+/*
+main layout, font overlaping
+*/
+
+#desktop-menu > li > a,
+.slogan h1, .slogan h2 { font-weight: 900 !important; letter-spacing: -1px;}
+h5 {font-family: 'Noto Sans KR'!important;}
+
+.section-main { padding: 0; background-color: #202732!important; padding-top: 40px;}
+.section-main .container { padding: 80px 80px 60px 80px; background-color: #f7f7f7;}
+#professional .container,
+#clients .container,
+#news .container,
+#contact .container{ background-color: #fff; }
+#recruit .container{ padding: 0; }
+#recruit .container .row,
+#recruit .container p{ margin: 0;}
+#recruit .container img{ width: 100%;}
+#contact-info { padding: 0;}
+#footer-download .container {background-color: #202732;}
+#counting { background-image : none!important;}
