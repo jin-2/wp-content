@@ -2266,3 +2266,31 @@ add: client-carousel control button style
     right: 0;
 }
 */
+/*NEWS ROOM*/
+
+.news-room .column {
+    height: 280px;
+}
+.news-room h4{
+    height: 68px;
+}
+
+@media all and (max-width: 1229px) {
+	.news-room h4{
+		overflow: hidden;
+		width: 100%;
+	    height: auto;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	}
+	.news-room .column h4{
+		margin-bottom: 20px;
+	}
+	.news-room .column{
+		height: auto;
+		margin-top: 3em;
+	}
+	.news-room .column:first-child{
+		margin-top: 0;
+	}
+}
